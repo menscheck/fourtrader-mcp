@@ -1,0 +1,103 @@
+# Struttura Progetto: fourtrader-mcp
+
+```
+fourtrader-mcp/
+├── src/
+│   ├── index.ts                    # Server MCP principale
+│   ├── providers/
+│   │   ├── fourMeme.ts            # Provider Four.meme (simile a pumpFun.ts)
+│   │   ├── bitqueryApi.ts         # API Bitquery (simile a moralisApi.ts)
+│   │   └── twitter.ts             # (opzionale, stesso del progetto Solana)
+│   ├── tools/
+│   │   ├── fourMemeTools.ts       # Tools MCP per Four.meme
+│   │   └── twitterTools.ts        # (opzionale)
+│   ├── resources/
+│   │   ├── fourMemeResources.ts   # Resources MCP
+│   │   └── twitterResources.ts    # (opzionale)
+│   └── utils/
+│       ├── config.ts              # Configurazione environment
+│       └── logger.ts              # Logger (stesso del progetto Solana)
+├── .env                           # Variabili d'ambiente
+├── package.json                   # Dipendenze
+├── tsconfig.json                  # Config TypeScript
+├── mcp-startup.js                 # Script di avvio
+└── README.md                      # Documentazione
+
+```
+
+## File Principali da Creare
+
+### 1. **bitqueryApi.ts** - Sostituisce moralisApi.ts
+- API per accedere ai dati Four.meme via Bitquery
+- Endpoint GraphQL per token, prezzi, bonding curve, ecc.
+
+### 2. **fourMeme.ts** - Sostituisce pumpFun.ts  
+- Logica trading Four.meme
+- Integrazione con smart contract BNB Chain
+- Buy/Sell token usando ethers.js
+
+### 3. **index.ts** - Server principale
+- Registra tools MCP per BNB
+- Inizializza provider Four.meme
+
+### 4. **.env** - Configurazione
+```env
+# Server Configuration
+SERVER_NAME=agentlink-mcp-bnb
+SERVER_VERSION=1.0.0
+
+# BNB Chain Configuration
+WALLET_ADDRESS=your_bnb_wallet_address
+WALLET_PRIVATE_KEY=your_bnb_private_key
+BNB_RPC_ENDPOINT=https://bsc-dataseed.binance.org/
+
+# Four.meme Configuration
+FOURMEME_CONTRACT_ADDRESS=0x5c952063c7fc8610FFDB798152D69F0B9550762b
+
+# Bitquery API Configuration
+BITQUERY_API_KEY=your_bitquery_api_key
+BITQUERY_API_ENDPOINT=https://streaming.bitquery.io/graphql
+
+# Twitter Configuration (optional)
+TWITTER_API_KEY=your_twitter_api_key
+TWITTER_API_KEY_SECRET=your_twitter_api_key_secret
+```
+
+### 5. **package.json** - Dipendenze
+```json
+{
+  "name": "agentlink-mcp-bnb",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "ethers": "^6.13.0",
+    "axios": "^1.7.0",
+    "dotenv": "^16.4.0",
+    "winston": "^3.17.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
+```
+
+## Differenze Chiave rispetto al Progetto Solana
+
+| Aspetto | Solana (PumpFun) | BNB (Four.meme) |
+|---------|------------------|-----------------|
+| **Blockchain** | Solana | BNB Smart Chain |
+| **Libreria** | @solana/web3.js + bs58 | ethers.js o web3.js |
+| **Data Provider** | Moralis API | Bitquery GraphQL API |
+| **Smart Contract** | PumpFun contract | Four.meme: 0x5c952063c7fc8610FFDB798152D69F0B9550762b |
+| **Native Token** | SOL | BNB |
+| **RPC Endpoint** | Solana mainnet | BSC mainnet |
+
+## Prossimi Passi
+
+1. **Ottieni Bitquery API Key**: https://bitquery.io/
+2. **Configura wallet BNB** con private key
+3. **Implementa i file** che ti fornirò
+4. **Testa con MCP Inspector**
